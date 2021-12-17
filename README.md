@@ -11,16 +11,6 @@ Estruturas de dados para matrizes esparsas não armazenam os zeros. Elas sacrifi
 
 Uma dessas representações é o vetor de coordenadas: cada elemento não-zero em i,j é colocado em um vetor em que cada posição armazena uma tripla (i,j,elemento). Normalmente o vetor é mantido ordenado por i e, para o mesmo i, por j.
 
-Por exemplo, a matriz
-
-0 0 0 0
-7 0 0 0
-0 0 9 0  
-0 0 0 0
-0 8 0 5
-pode ser representada em um vetor de coordenadas da forma:
-
-
 Neste trabalho você deve implementar um vetor de coordenadas com operações de recuperação e atualização dos elementos de uma matriz esparsa. Seu programa deve usar um vetor de structs.
 
 A matriz começa com um conjunto de k (k ≤ n+m) elementos não zero. Depois é atualizada e consultada por comandos que são dados na entrada.
